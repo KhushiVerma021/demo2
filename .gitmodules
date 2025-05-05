@@ -1,0 +1,3 @@
+[submodule ".github/workflows/submodules/demo2"]
+	path = .github/workflows/submodules/demo2
+	url = https://github.com/KhushiVerma021/demo2.git
