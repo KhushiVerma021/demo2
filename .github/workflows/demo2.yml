@@ -1,21 +1,16 @@
-project:
-  name: Welcome Page Design
-  overview: >
-   A collbortaively designed web- based welcome pqage offering tailored skin care advice. 
-   Features sections for different sections for different skin types- dry, oily and combination.
+name: demo2
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-team:
-- name: Jashneer Kaur
-  role: Main Page Developer
-- name: Kashish Chaudhary
-  role: Dry Developer
-- name: Khushi Verma
-  role: Oily Page Developer
-- name: Palak
-  role: Combination Page Developer
+      - name: Run a one-line script
+        run: echo Hello, world!
 
-technologies:
-  - HTML
-  - CSS
-  - Git & Github
-  - Visual Studio Code
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
